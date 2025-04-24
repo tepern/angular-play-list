@@ -1,0 +1,14 @@
+{
+  "playList": [
+    {
+      "id": 1,
+      "name": "Пение Соловья в лесу",
+      "file": "penie-solovya-v-lesu-39972.mp3"
+    },
+    {
+      "id": 2,
+      "name": "Славка-черноголовка и соловей у лесного ручья",
+      "file": "slavka-chernogolovka-i-solovey-u-lesnogo-ruchya-27030.mp3"
+    }
+  ]
+}
