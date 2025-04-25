@@ -6,7 +6,7 @@ import { Audio } from '../model/audio';
 @Component({
   selector: 'app-table',
   templateUrl: './table.component.html',
-  styleUrls: ['./table.component.css'],
+  styleUrls: ['./table.component.scss'],
 })
 export class TableComponent implements OnDestroy {
   public readonly list$ = new Observable<Audio[]>();

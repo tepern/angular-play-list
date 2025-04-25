@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { RouterModule, Router } from '@angular/router';
+import { RouterModule } from '@angular/router';
 import { AppRoutingModule } from './app-routing.module';
 import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -9,12 +9,10 @@ import { MatCardModule } from '@angular/material/card';
 import { AppComponent } from './app.component';
 import { TableComponent } from './table/table.component';
 import { HttpService } from './services/http.service';
+import { AudioViewerComponent } from './table/audio-viewer/audio-viewer.component';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    TableComponent,
-  ],
+  declarations: [AppComponent, TableComponent, AudioViewerComponent],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
@@ -25,6 +23,6 @@ import { HttpService } from './services/http.service';
     MatCardModule,
   ],
   providers: [HttpService],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

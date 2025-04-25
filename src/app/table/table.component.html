@@ -30,9 +30,14 @@
       <tr
         mat-row
         (click)="setRow(row)"
+        [class.list-row-is-clicked]="currentRow === row"
         *matRowDef="let row; columns: displayedColumns"
       ></tr>
     </table>
   </mat-card-content>
-  <mat-card-footer class="example-card-footer"> </mat-card-footer>
+  <mat-card-footer class="list-card-footer">
+    <ng-container *ngIf="currentRow">
+      <app-audio-viewer [src]="currentRow.file"></app-audio-viewer>
+    </ng-container>
+  </mat-card-footer>
 </mat-card>

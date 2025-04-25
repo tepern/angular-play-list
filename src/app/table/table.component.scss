@@ -1,0 +1,41 @@
+.container {
+  margin: 50px;
+
+  @media (max-width: 450px) {
+    margin: initial;
+  }
+}
+
+.header {
+  margin-bottom: 20px;
+}
+
+.content {
+  margin-bottom: 40px;
+}
+
+.list-card-footer {
+  padding: 16px;
+}
+
+.list-table {
+  width: 100%;
+}
+
+.mat-mdc-row {
+  .mat-mdc-cell {
+    border-bottom: 1px solid transparent;
+    border-top: 1px solid transparent;
+    cursor: pointer;
+  }
+}
+
+.mat-mdc-row:hover {
+  .mat-mdc-cell {
+    border-color: currentColor;
+  }
+} 
+
+.list-row-is-clicked {
+  font-weight: bold;
+}
